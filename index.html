@@ -36,12 +36,15 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Work Experience</a></li>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                <!-- NEW: AI Projects -->
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#ai-projects">AI Projects</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Work Experience</a></li>
+            </ul>
         </ul>
     </div>
   </div>
@@ -144,6 +147,25 @@
 
         <hr class="m-0" />
 
+
+        <hr class="m-0" />
+
+    <!-- AI Projects -->
+<section class="resume-section" id="ai-projects">
+  <div class="resume-section-content">
+    <h2 class="mb-5">AI Projects</h2>
+
+    <div class="subheading mb-3">Fraud Risk Ranking for Vehicle Insurance (First AI Business Case)</div>
+    <p>
+      Built a first end‑to‑end AI prototype on <strong>synthetic</strong> data (5,000 claims) to rank vehicle insurance claims by fraud risk so investigators can focus on the riskiest subset. Trained and compared <strong>Logistic Regression</strong> and <strong>Random Forest</strong> models in Python (<em>scikit‑learn</em>) with an 80/20 train‑test split, scaling of numeric features and one‑hot encoding of categoricals. Evaluated with ROC AUC, Precision, Recall, and F1. Operated the model at a capacity‑aligned <em>flag rate</em> (top 25% highest‑risk claims) to mirror real investigation constraints.
+      <br><strong><u>Results (test set):</u></strong> Logistic Regression AUC 0.898; at 25% flag rate: Precision 0.332, Recall 0.798, F1 0.469 (Random Forest: AUC 0.867; Precision 0.308; Recall 0.750; F1 0.437).
+      <br><strong><u>Tools:</u></strong> Python, pandas, numpy, matplotlib, seaborn, scikit‑learn; LaTeX (Overleaf) for report.
+      <br><a href="https://github.com/ChrisStamou/AI-Case-Insurance-Fraud-Detection-with-AI" target="_blank">View on GitHub</a>
+    </p>
+  </div>
+</section>
+
+<hr class="m-0" />
         <!-- Projects -->
 <section class="resume-section" id="projects">
     <div class="resume-section-content">
