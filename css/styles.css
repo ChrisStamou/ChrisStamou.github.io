@@ -10970,3 +10970,37 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+/* === PwC-inspired light orange theme overrides === */
+:root {
+  --pwc-orange: #E87722;      /* light orange */
+  --pwc-orange-dark: #C65F14; /* hover/darker */
+  --pwc-link: #E87722;
+}
+
+/* Sidebar + any bg-primary usage */
+.bg-primary {
+  background-color: var(--pwc-orange) !important;
+}
+
+/* Any text-primary usage (e.g., your last name) */
+.text-primary {
+  color: var(--pwc-orange) !important;
+}
+
+/* Links */
+a {
+  color: var(--pwc-link);
+}
+a:hover,
+a:focus {
+  color: var(--pwc-orange-dark);
+}
+
+/* Social icons: make them match the PwC theme */
+.social-icons .social-icon {
+  background-color: var(--pwc-orange);
+}
+.social-icons .social-icon:hover {
+  background-color: var(--pwc-orange-dark);
+}
+
